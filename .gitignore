@@ -1,2 +1,5 @@
 # ALL CLASSES
 *.class
+
+# VSCode Dump
+.vscode/
