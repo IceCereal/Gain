@@ -25,4 +25,38 @@ public class mainPlayer{
 		experiencePoints = 0;
 	}
 
+	public int setName(String sentName){
+		this.name = sentName;
+		return 1;
+	}
+
+	public int setDescription_Long(String sentDescLong){
+		this.description_long = sentDescLong;
+		return 1;
+	}
+
+	public int setDescription_Short(String sentDescShort){
+		this.description_short = sentDescShort;
+		return 1;
+	}
+
+	public int setLevel(int sentLevel){
+		this.level = sentLevel;
+		return 1;
+	}
+
+	public int setHP(int sentHealthPoints){
+		this.healthPoints = sentHealthPoints;
+		return 1;
+	}
+
+	public int setHP_Reductor(int sentHealthPoints_Reductor){
+		this.healthPoints_Reductor = sentHealthPoints_Reductor;
+		return 1;
+	}
+
+	public int setXP(int sentExperiencePoints){
+		this.experiencePoints = sentExperiencePoints;
+		return 1;
+	}
 }
