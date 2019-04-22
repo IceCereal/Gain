@@ -55,4 +55,28 @@ public class gainObject{
 		}
 		return 0;
 	}
+
+	public String getName(){
+		return name;
+	}
+
+	public String getDescripitionLong(){
+		return description_long;
+	}
+
+	public String getDescripitionShort(){
+		return description_short;
+	}
+
+	public int getLevelUsable(){
+		return levelUsable;
+	}
+
+	public int getObjectSize(){
+		return objectSize;
+	}
+
+	public int getObjectType(){
+		return objectType;
+	}
 }
