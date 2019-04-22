@@ -1,21 +1,21 @@
-package io.github.IceCereal.src.GainObject;
+//package io.github.IceCereal.src.GainObject;
 
 public class gainObject{
-	String name;	// Character name: defaults ["Object-Ice"]
+	private String name;	// Character name: defaults ["Object-Ice"]
 	
-	String description_long;	// Long Description of Character: defaults [null]
-	String description_short;	// Short Description of Character: defaults [null]
+	private String description_long;	// Long Description of Character: defaults [null]
+	private String description_short;	// Short Description of Character: defaults [null]
 
-	int levelUsable; 	// The level at which the main player can unlock it: defaults [0]
-	int objectSize;	// Size of the object: defaults [1]
+	private int levelUsable; 	// The level at which the main player can unlock it: defaults [0]
+	private int objectSize;	// Size of the object: defaults [1]
 
-	int objectType;
+	private int objectType;
 	/*
 		Object Types:
 			0 - Consumable
 			1 - Attack
 	*/
-	int objectType_Value;	// The value of the object, [i.e. Knife: Attack: 10]: defaults [1]
+	private int objectType_Value;	// The value of the object, [i.e. Knife: Attack: 10]: defaults [1]
 
 	gainObject(){
 		name = "Object-Ice";
