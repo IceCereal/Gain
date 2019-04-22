@@ -15,6 +15,7 @@ public class gainObject{
 			0 - Consumable
 			1 - Attack
 	*/
+	int objectType_Value;	// The value of the object, [i.e. Knife: Attack: 10]: defaults [1]
 
 	gainObject(){
 		name = "Object-Ice";
@@ -23,6 +24,7 @@ public class gainObject{
 
 		levelUsable = 0;
 		objectSize = 1;
+		objectType_Value = 1;
 	}
 
 	public int setName(String sentName){
@@ -42,10 +44,12 @@ public class gainObject{
 
 	public int setLevelUsable(int sentLevelUsable){
 		levelUsable = sentLevelUsable;
+		return 1;
 	}
 
 	public int setObjecSize(int sentObjectSize){
 		objectSize = sentObjectSize;
+		return 1;
 	}
 
 	public int setObjectType(int sentObjectType){
