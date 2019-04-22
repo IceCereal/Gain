@@ -43,7 +43,7 @@ public class ability{
 		return "Fail";
 	}
 
-	public Map getAllAbilities(){
+	public Map<String, Integer> getAllAbilities(){
 		return Abilities;		
 	}
 
