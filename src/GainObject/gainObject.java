@@ -24,4 +24,35 @@ public class gainObject{
 		levelUsable = 0;
 		objectSize = 1;
 	}
+
+	public int setName(String sentName){
+		name = sentName;
+		return 1;
+	}
+
+	public int setDescription_Long(String sentDescription_Long){
+		description_long = sentDescription_Long;
+		return 1;
+	}
+
+	public int setDescription_Short(String sentDescription_Short){
+		description_short = sentDescription_Short;
+		return 1;
+	}
+
+	public int setLevelUsable(int sentLevelUsable){
+		levelUsable = sentLevelUsable;
+	}
+
+	public int setObjecSize(int sentObjectSize){
+		objectSize = sentObjectSize;
+	}
+
+	public int setObjectType(int sentObjectType){
+		if ( (sentObjectType == 1) || (sentObjectType == 0) ){
+			objectType = sentObjectType;
+			return 1;
+		}
+		return 0;
+	}
 }
