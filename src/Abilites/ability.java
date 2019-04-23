@@ -37,10 +37,10 @@ public class ability{
 		return Abilities.containsKey(abilityName);
 	}
 
-	public String getAbilityValue(String abilityName){
+	public int getAbilityValue(String abilityName){
 		if (checkAbilityExist(abilityName))
-			return Abilities.get(abilityName).toString();
-		return "Fail";
+			return Abilities.get(abilityName);
+		return Integer.MIN_VALUE;
 	}
 
 	public Map<String, Integer> getAllAbilities(){
