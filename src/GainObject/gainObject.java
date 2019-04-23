@@ -52,9 +52,10 @@ public class gainObject{
 		return 1;
 	}
 
-	public int setObjectType(int sentObjectType){
+	public int setObjectType(int sentObjectType, int sentObjectType_Value){
 		if ( (sentObjectType == 1) || (sentObjectType == 0) ){
 			objectType = sentObjectType;
+			objectType_Value = sentObjectType_Value;
 			return 1;
 		}
 		return 0;
