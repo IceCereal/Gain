@@ -84,4 +84,18 @@ public class gainObject{
 	public int getObjectType(){
 		return objectType;
 	}
+
+	public int consumeValue(){
+		if (objectType == 0){
+			return objectType_Value;
+		}
+		return Integer.MIN_VALUE;
+	}
+
+	public int attackValue(){
+		if (objectType == 1){
+			return objectType_Value;
+		}
+		return Integer.MIN_VALUE;
+	}
 }
