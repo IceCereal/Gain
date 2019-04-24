@@ -18,4 +18,26 @@ public class Room{
 		description_long = "There seems to be nothing special about here";
 		description_short = "There seems to be nothing special about here";
 	}
+
+	public int changeCoordinates(int sentX, int sentY){
+		x = sentX;
+		y = sentY;
+
+		return 1;
+	}
+
+	public int setRoomName(String sentRoomName){
+		name = sentRoomName;
+		return 1;
+	}
+
+	public int setDescription_Long(String sentDescription_Long){
+		description_long = sentDescription_Long;
+		return 1;
+	}
+
+	public int setDescription_Short(String sentDescription_Short){
+		description_short = sentDescription_Short;
+		return 1;
+	}
 }
