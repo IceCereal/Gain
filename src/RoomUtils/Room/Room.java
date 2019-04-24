@@ -31,7 +31,7 @@ public class Room{
 		return 1;
 	}
 
-	public int setRoomName(String sentRoomName){
+	public int setName(String sentRoomName){
 		name = sentRoomName;
 		return 1;
 	}
