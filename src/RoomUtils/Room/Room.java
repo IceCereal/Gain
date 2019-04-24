@@ -5,8 +5,8 @@ public class Room{
 
 	private String name;	// Room name: defaults ["Unknown"]
 	
-	private String description_long;	// Long Description of Room: defaults ["There seems to be nothing special about <RoomName>"]
-	private String description_short;	// Short Description of Room: defaults ["There seems to be nothing special about <RoomName>"]
+	private String description_long;	// Long Description of Room: defaults ["There seems to be nothing special here"]
+	private String description_short;	// Short Description of Room: defaults ["There seems to be nothing special here"]
 
 	// TODO: implement an array of Gainbjects
 }
