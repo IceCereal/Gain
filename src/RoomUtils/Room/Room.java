@@ -1,7 +1,10 @@
 package io.github.IceCereal.src.RoomUtils.Room;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Room{
-	private int x, y;	// The X, Y coordinate of the room. Internal property set by Core Engine
+	private List<Integer> coordinates;	// The X, Y coordinates of the room. Internal property set by Core Engine
 
 	private String name;	// Room name: defaults ["Unknown"]
 	
@@ -10,18 +13,20 @@ public class Room{
 
 	// TODO: implement an array of Gainbjects
 
-	public Room(int sentX, int sentY){
-		x = sentX;
-		y = sentY;
+	public Room(List<Integer> sentCoordinates){
+		coordinates = new ArrayList<Integer>();
+
+		coordinates.add(sentCoordinates.get(0));
+		coordinates.add(sentCoordinates.get(1));
 
 		name = "Unknown";
 		description_long = "There seems to be nothing special about here";
 		description_short = "There seems to be nothing special about here";
 	}
 
-	public int changeCoordinates(int sentX, int sentY){
-		x = sentX;
-		y = sentY;
+	public int changeCoordinates(List<Integer> sentCoordinates){
+		coordinates.add(sentCoordinates.get(0));
+		coordinates.add(sentCoordinates.get(1));
 
 		return 1;
 	}
