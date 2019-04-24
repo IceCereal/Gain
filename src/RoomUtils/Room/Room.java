@@ -45,4 +45,20 @@ public class Room{
 		description_short = sentDescription_Short;
 		return 1;
 	}
+
+	public List<Integer> getCoordinates(){
+		return coordinates;
+	}
+
+	public String getName(){
+		return name;
+	}
+
+	public String getDescription_Long(){
+		return description_long;
+	}
+
+	public String getDescription_Short(){
+		return description_short;
+	}
 }
