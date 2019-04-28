@@ -68,4 +68,29 @@ class Door{
 
 		return 1;
 	}
+
+	public List<Integer> getCoordinatesFrom(){
+		return coordinatesFrom;
+	}
+
+	public List<Integer> getCoordinatesTo(){
+		return coordinatesTo;
+	}
+
+	public List<List> getCoordinates(){
+		List<List> coordinates;
+		
+		coordinates.add(coordinatesFrom);
+		coordinates.add(coordinatesTo);
+
+		return coordinates;
+	}
+
+	public Bool getKeyRequired(){
+		return key_required;
+	}
+
+	public int getKeyID(){
+		return key_id;
+	}
 }
