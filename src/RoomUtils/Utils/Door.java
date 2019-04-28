@@ -20,4 +20,52 @@ class Door{
 		key_required = false;
 		key_id = -1;
 	}
+
+	public int setFromCoords(List<Integer> sentCoordinatesFrom){
+		coordinatesFrom.remove(0);
+		coordinatesFrom.remove(1);
+
+		coordinatesFrom.add(sentCoordinatesFrom.get(0));
+		coordinatesFrom.add(sentCoordinatesFrom.get(1));
+
+		return 1;
+	}
+
+	public setToCoords(List<Integer> sentCoordinatesTo){
+		coordinatesTo.remove(0);
+		coordinatesTo.remove(1);
+
+		coordinatesTo.add(sentCoordinatesTo.get(0));
+		coordinatesTo.add(sentCoordinatesTo.get(1));
+
+		return 1;
+	}
+
+	public setCoords(List<Integer> sentCoordinatesFrom, List<Integer> sentCoordinatesTo){
+		coordinatesFrom.remove(0);
+		coordinatesFrom.remove(1);
+
+		coordinatesFrom.add(sentCoordinatesFrom.get(0));
+		coordinatesFrom.add(sentCoordinatesFrom.get(1));
+
+		coordinatesTo.remove(0);
+		coordinatesTo.remove(1);
+
+		coordinatesTo.add(sentCoordinatesTo.get(0));
+		coordinatesTo.add(sentCoordinatesTo.get(1));
+
+		return 1;
+	}
+
+	public int setKeyRequired(int sentKey_Required){
+		key_required = sentKey_Required;
+		
+		return 1;
+	}
+
+	public int setKeyID(int sentKey_ID){
+		key_id = sentKey_ID;
+
+		return 1;
+	}
 }
