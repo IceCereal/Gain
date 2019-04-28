@@ -25,6 +25,9 @@ public class Room{
 	}
 
 	public int changeCoordinates(List<Integer> sentCoordinates){
+		coordinates.remove(0);
+		coordinates.remove(1);
+
 		coordinates.add(sentCoordinates.get(0));
 		coordinates.add(sentCoordinates.get(1));
 
