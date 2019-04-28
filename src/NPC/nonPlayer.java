@@ -39,8 +39,13 @@ class NPC{
 		this.healthPoints_Reductor = healthPoints_Reductor;
 	}
 
-	public void setTypeNPC(int typeNPC) {
-		this.typeNPC = typeNPC;
+	public int setTypeNPC(int typeNPC) {
+		if ( (typeNPC >= 0) && (typeNPC <= 9)){
+			this.typeNPC = typeNPC;
+			return 1;
+		}
+		return -1;
+		
 	}
 
 	public void setAttackingLevel(int attackingLevel) {
