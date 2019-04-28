@@ -46,4 +46,32 @@ class NPC{
 	public void setAttackingLevel(int attackingLevel) {
 		this.attackingLevel = attackingLevel;
 	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public String getDescription_long() {
+		return description_long;
+	}
+	
+	public String getDescription_short() {
+		return description_short;
+	}
+	
+	public int getHealthPoints() {
+		return healthPoints;
+	}
+	
+	public int getHealthPoints_Reductor() {
+		return healthPoints_Reductor;
+	}
+	
+	public int getTypeNPC() {
+		return typeNPC;
+	}
+	
+	public int getAttackingLevel() {
+		return attackingLevel;
+	}
 }
