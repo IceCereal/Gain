@@ -9,4 +9,15 @@ class Door{
 
 	Bool key_required; 	// Boolean that checks whether the key is required
 	int key_id; 	// If key_required: True, key_id represents the key id for the door
+
+	public Door(){
+		coordinatesFrom.add(0);
+		coordinatesFrom.add(0);
+
+		coordinatesTo.add(0);
+		coordinatesTo.add(0);
+
+		key_required = false;
+		key_id = -1;
+	}
 }
