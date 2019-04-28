@@ -4,5 +4,8 @@
 # VSCode Dump
 .vscode/
 
+# IntelliJ Dump
+.idea/
+
 # Temporary Workspace
 TempWork/
