@@ -27,7 +27,7 @@ class NPC{
 			0 - Friendly
 			1 - Guide
 			2 - Enemy
-	*/
+	*/ // defaults [0]
 
 	int attackingLevel; // Level at which the NPC attacks: defaults [0] (range 0 - 9)
 
