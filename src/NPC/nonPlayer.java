@@ -77,9 +77,9 @@ class NPC{
 	public void setAttackingLevel(int attackingLevel) {
 		if ((attackingLevel >=0) && (attackingLevel <=10))
 			this.attackingLevel = attackingLevel;
-		if (attackLevel > 10)
+		if (attackingLevel > 10)
 			this.attackingLevel = 10;
-		if (attackLevel < 0)
+		if (attackingLevel < 0)
 			this.attackingLevel = 0;
 	}
 
