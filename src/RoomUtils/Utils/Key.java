@@ -8,4 +8,12 @@ class Key{
 		key_id = 0;
 		hasKey = false;
 	}
+
+	public int getKey_id() {
+		return key_id;
+	}
+
+	public Boolean getHasKey() {
+		return hasKey;
+	}
 }
