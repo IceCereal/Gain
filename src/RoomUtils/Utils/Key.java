@@ -1,6 +1,6 @@
 package io.github.IceCereal.src.RoomUtils.Utils;
 
-abstract class Key{
-	private int key_id;
-	private Boolean hasKey;
+class Key{
+	private int key_id; 	// Engine set key_id
+	private Boolean hasKey; 	// Not sure if this will be useful, but I'll keep it here for now
 }
