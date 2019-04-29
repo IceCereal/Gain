@@ -1,10 +1,22 @@
 package io.github.IceCereal.src.NPC;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class NPC{
 	String name; 	// Name of the NPC: defaults ["NPC-Ice"]
 
 	String description_long;	// Long Description of Character: defaults [null]
 	String description_short;	// Short Description of Character: defaults [null]
+
+	Map<Integer, String> DescriptionMap = new HashMap<Integer, String>();
+	/*
+		Pull up this description when I say so, essentially.
+			0 - Okay, go to that room
+			1 - You will die soon
+			2 - blah de blah de blah
+		<This action requires this Description>
+	*/
 
 	int healthPoints;	// HP: defaults [100]
 	int healthPoints_Reductor; 	// Does HP reduce every round: defaults [0]
