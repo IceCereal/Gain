@@ -7,7 +7,7 @@ class Door{
 	private List<Integer> coordinatesFrom; 	// Door opens from these coords
 	private List<Integer> coordinatesTo; 	// Door opens to these coords
 
-	Bool key_required; 	// Boolean that checks whether the key is required
+	Boolean key_required; 	// Boolean that checks whether the key is required
 	int key_id; 	// If key_required: True, key_id represents the key id for the door
 
 	public Door(){
@@ -57,7 +57,7 @@ class Door{
 		return 1;
 	}
 
-	public int setKeyRequired(int sentKey_Required){
+	public int setKeyRequired(Boolean sentKey_Required){
 		key_required = sentKey_Required;
 		
 		return 1;
@@ -86,7 +86,7 @@ class Door{
 		return coordinates;
 	}
 
-	public Bool getKeyRequired(){
+	public Boolean getKeyRequired(){
 		return key_required;
 	}
 
