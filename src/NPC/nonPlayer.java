@@ -65,7 +65,7 @@ class NPC{
 	}
 
 	public int setTypeNPC(int typeNPC) {
-		if ( (typeNPC >= 0) && (typeNPC <= 9)){
+		if ( (typeNPC >= 0) && (typeNPC <= 2)){
 			this.typeNPC = typeNPC;
 			return 1;
 		}
