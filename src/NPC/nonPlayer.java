@@ -31,6 +31,19 @@ class NPC{
 
 	int attackingLevel; // Level at which the NPC attacks: defaults [0] (range 0 - 9)
 
+	public NPC(){
+		name = "NPC-Ice";
+
+		description_long = null;
+		description_short = null;
+		
+		healthPoints = 100;
+		healthPoints_Reductor = 0;
+
+		typeNPC = 0;
+		attackingLevel = 0;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
