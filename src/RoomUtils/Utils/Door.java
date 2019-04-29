@@ -78,7 +78,7 @@ class Door{
 	}
 
 	public List<List> getCoordinates(){
-		List<List> coordinates;
+		List<List> coordinates = new ArrayList<List>();
 		
 		coordinates.add(coordinatesFrom);
 		coordinates.add(coordinatesTo);
