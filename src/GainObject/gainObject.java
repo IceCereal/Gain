@@ -1,4 +1,4 @@
-//package io.github.IceCereal.src.GainObject;
+package io.github.IceCereal.src.GainObject;
 
 public class gainObject{
 	private String name;	// Object name: defaults ["Object-Ice"]
