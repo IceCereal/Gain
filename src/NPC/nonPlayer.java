@@ -2,6 +2,7 @@ package io.github.IceCereal.src.NPC;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 class NPC{
 	String name; 	// Name of the NPC: defaults ["NPC-Ice"]
