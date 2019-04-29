@@ -16,4 +16,12 @@ class Key{
 	public Boolean getHasKey() {
 		return hasKey;
 	}
+
+	public void setKey_id(int key_id) {
+		this.key_id = key_id;
+	}
+
+	public void setHasKey(Boolean hasKey) {
+		this.hasKey = hasKey;
+	}
 }
