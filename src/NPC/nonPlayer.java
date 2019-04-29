@@ -75,7 +75,12 @@ class NPC{
 	}
 
 	public void setAttackingLevel(int attackingLevel) {
-		this.attackingLevel = attackingLevel;
+		if ((attackingLevel >=0) && (attackingLevel <=10))
+			this.attackingLevel = attackingLevel;
+		if (attackLevel > 10)
+			this.attackingLevel = 10;
+		if (attackLevel < 0)
+			this.attackingLevel = 0;
 	}
 
 	public void addTo_DescriptionMap(int key, String value) {
@@ -112,5 +117,13 @@ class NPC{
 
 	public Map<Integer, String> getDescriptionMap() {
 		return DescriptionMap;
-	}	
+	}
+
+	public int Attack(){
+		Random rand = new Random(3010);
+		int attackMagnitude = rand.nextInt(attackingLevel);
+
+		return attackMagnitude;
+		// NOTE: Core will adjust the actual value to be scaled depending on MP's HP
+	}
 }
