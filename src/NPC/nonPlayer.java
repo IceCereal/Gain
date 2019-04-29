@@ -77,6 +77,10 @@ class NPC{
 		this.attackingLevel = attackingLevel;
 	}
 
+	public void addTo_DescriptionMap(int key, String value) {
+		DescriptionMap.put(key, value);
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -104,4 +108,8 @@ class NPC{
 	public int getAttackingLevel() {
 		return attackingLevel;
 	}
+
+	public Map<Integer, String> getDescriptionMap() {
+		return DescriptionMap;
+	}	
 }
