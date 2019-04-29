@@ -31,7 +31,7 @@ class Door{
 		return 1;
 	}
 
-	public setToCoords(List<Integer> sentCoordinatesTo){
+	public int setToCoords(List<Integer> sentCoordinatesTo){
 		coordinatesTo.remove(0);
 		coordinatesTo.remove(1);
 
@@ -41,7 +41,7 @@ class Door{
 		return 1;
 	}
 
-	public setCoords(List<Integer> sentCoordinatesFrom, List<Integer> sentCoordinatesTo){
+	public int setCoords(List<Integer> sentCoordinatesFrom, List<Integer> sentCoordinatesTo){
 		coordinatesFrom.remove(0);
 		coordinatesFrom.remove(1);
 
