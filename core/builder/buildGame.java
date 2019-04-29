@@ -15,4 +15,20 @@ public class buildGame{
 		authorName = "IceCereal's-Discipile";
 		gameName = "The-Game-Of-Ice";
 	}
+	
+	public String getAuthorName() {
+		return authorName;
+	}
+
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
+
+	public String getGameName() {
+		return gameName;
+	}
+
+	public void setGameName(String gameName) {
+		this.gameName = gameName;
+	}
 }
