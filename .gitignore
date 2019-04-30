@@ -1,5 +1,6 @@
-# ALL CLASSES
+# ALL CLASSES & JAVA FILES
 *.class
+*.jar
 
 # VSCode Dump
 .vscode/
